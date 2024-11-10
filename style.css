@@ -1,0 +1,135 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #201e1e9a; /* Light gray background */
+    color: #212121; /* Blackish text */
+    border-color: #1abc9c; /* Teal accents */
+}
+
+h1 {
+    text-align: center;
+    color: #eee9e9; /* Light text for main heading */
+    text-shadow: 3px 3px 6px rgba(255, 99, 71, 0.7); /* Soft orange shadow for main heading */
+    font-size: 60px; /* Increased font size */
+}
+
+#introParagraph {
+    text-align: center;
+    font-size: 24px;
+    color: #d3d2d2; /* Dark gray for readability */
+    margin-top: 10px; /* Adds space between the heading and paragraph */
+    margin-bottom: 20px; /* Adds space below the paragraph */
+    font-weight: normal;
+    text-shadow: 1px 1px 6px
+}
+
+form {
+    margin: auto;
+    background-color: #3a3b3e; /* Medium dark gray for form background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5); /* Blue shadow for main box */
+    padding: 25px;
+    max-width: 1100px;
+    color: #c9c9c9; /* Light gray for text readability */
+}
+
+fieldset {
+    border: 2px solid #565a5e; /* Subtle gray border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #323335; /* Darker gray for fieldset background */
+    box-shadow: 0 6px 12px rgba(123, 255, 123, 0.5); /* Green shadow for fieldset */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+fieldset:hover {
+    background-color: #404245; /* Slightly lighter gray on hover */
+    box-shadow: 0 8px 16px rgba(255, 165, 0, 0.6); /* Orange shadow on hover */
+}
+
+legend {
+    font-weight: bold;
+    color: #eaeaea; /* Light text for legend */
+    text-shadow: 1px 1px 3px rgba(123, 104, 238, 0.7); /* Light purple shadow for legend */
+    font-size: 28px; /* Slightly increased font size */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #c9c9c9; /* Light gray text for labels */
+}
+
+input, textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid #565a5e; /* Gray border for inputs */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #45474a; /* Darker gray background for inputs */
+    color: #eaeaea; /* Light text */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3); /* Inner shadow for depth */
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #7a7d80; /* Lighter gray on focus */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #565a5e; /* Dark gray button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(204, 102, 255, 0.5); /* Purple shadow for button */
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #6b6e72; /* Slightly lighter gray on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Down arrow icon for button */
+button::after {
+    content: '⬇️';
+    font-size: 18px;
+}
+
+#resumeDisplay {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #565a5e; /* Dark gray border */
+    border-radius: 10px;
+    background-color: #3a3b3e; /* Dark gray background */
+    box-shadow: 0 8px 16px rgba(123, 255, 123, 0.5); /* Green shadow for resume display */
+    color: #c9c9c9; /* Light gray text for content */
+}
+
+#resumeDisplay h2 {
+    color: #eaeaea; /* Light gray for subheadings */
+    font-size: 22px; /* Larger font for better visibility */
+    text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.7); /* Soft red shadow for subheadings */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form, #resumeDisplay {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
